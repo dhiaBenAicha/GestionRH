@@ -1,6 +1,7 @@
 import React from "react";
 import {ProgressBar} from "react-bootstrap";
 
+
 class CurrentClientProject extends React.Component{
     render(){
         const {teamImage,logo,logoBg,title,sl,onClickEdit,onClickDelete,onClickAdd} = this.props;
@@ -58,7 +59,12 @@ class CurrentClientProject extends React.Component{
                         <button type="button" className="btn btn-outline-primary">Apply</button>
                         <button type="button" className="btn btn-outline-info">Details</button>
                        <span className="small light-danger-bg  p-1 rounded"><i className="icofont-ui-clock"></i> 17 Days Left</span>
+
+                     
                     </div>
+                   
+                  
+                    
                     
                 </div>
             </div>

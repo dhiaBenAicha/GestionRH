@@ -216,6 +216,16 @@
                     "children": []
                 },
                 {
+                    "name": "Remote Request",
+                    "routerLink": ["remote-request"],
+                    "identifier": "remote Request",
+                    "iconClass": "",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
                     "name": "Department",
                     "routerLink": ["department"],
                     "identifier": "Department",

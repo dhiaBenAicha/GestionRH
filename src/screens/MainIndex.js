@@ -2,13 +2,14 @@ import React from "react";
 import { Route } from "react-router";
 import Header from "../components/common/Header";
 import Projects from "./Projects/Projects";
+import Holidays from "./Employee/Holidays";
+import LeaveRequest from "./Employee/LeaveRequest";
 
 
 // import AttendanceEmployees from "./Employee/AttendanceEmployees";
 // import Departments from "./Employee/Departments";
 // import EmployeeProfile from "./Employee/EmployeeProfile";
-// import Holidays from "./Employee/Holidays";
-// import LeaveRequest from "./Employee/LeaveRequest";
+
 // import Members from "./Employee/Members";
 // import ClientProfile from "./Our Clients/ClientProfile";
 // import Clients from "./Our Clients/Clients";
@@ -58,7 +59,8 @@ class MainIndex extends React.Component{
                 {activekey !=="/chat-app"? activekey === "/documentation"?<PageHeader1 />:<Header/>:""}
                 <div className="body d-flex py-lg-3 py-md-2">
                 <Route exact path={`${process.env.PUBLIC_URL}/joboffers`} component={Projects} />
-
+                <Route exact path={`${process.env.PUBLIC_URL}/holidays`} component={Holidays} />
+                <Route exact path={`${process.env.PUBLIC_URL}/leave-request`} component={LeaveRequest} />
                     {/* <Route exact path={`${process.env.PUBLIC_URL}/`} component={HrDashboard} />
                     <Route exact path={`${process.env.PUBLIC_URL}/hr-dashboard`} component={HrDashboard} />
                     <Route exact path={`${process.env.PUBLIC_URL}/project-dashboard`} component={ProjectDashboard} />
@@ -72,10 +74,10 @@ class MainIndex extends React.Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/client-profile`} component={ClientProfile} />
                     <Route exact path={`${process.env.PUBLIC_URL}/members`} component={Members} />
                     <Route exact path={`${process.env.PUBLIC_URL}/members-profile`} component={EmployeeProfile} />
-                    <Route exact path={`${process.env.PUBLIC_URL}/holidays`} component={Holidays} />
+                    
                     <Route exact path={`${process.env.PUBLIC_URL}/attendance-employees`} component={AttendanceEmployees} />
                     <Route exact path={`${process.env.PUBLIC_URL}/attendance`} component={Attendance} />
-                    <Route exact path={`${process.env.PUBLIC_URL}/leave-request`} component={LeaveRequest} />
+                    
                     <Route exact path={`${process.env.PUBLIC_URL}/department`} component={Departments} />
                     <Route exact path={`${process.env.PUBLIC_URL}/invoices`} component={Invoices} />
                     <Route exact path={`${process.env.PUBLIC_URL}/payments`} component={Payments} />

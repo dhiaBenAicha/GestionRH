@@ -21,12 +21,8 @@ export default class App extends Component {
   }
   render() {
 
-
-
-
     return (
-     
-      // <div>   <AuthIndex/> </div>
+  // <div>   <AuthIndex/> </div>
 
 
       // -------------------------------------------------
@@ -36,6 +32,7 @@ export default class App extends Component {
         <Switch>
           <MainIndex activekey={this.activekey()}/>
         </Switch>
+       
       </div>
 
     )
